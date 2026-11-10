@@ -1,5 +1,5 @@
 import {dashboardStats,computerCategories} from './dashboard-data.js';
-import {icon} from './care.js?v=20261110b';
+import {icon} from './care.js?v=20261110c';
 const $=id=>document.getElementById(id),el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
 let current=[],handlers;
 export function setupDashboard(callbacks){handlers=callbacks;$('dashType').onchange=()=>renderDashboard(current);}
