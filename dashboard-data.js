@@ -1,0 +1,2 @@
+export const computerCategories=['LAPTOP','PC DE ESCRITORIO','ALL IN ONE'];
+export function dashboardStats(records,category=''){const list=records.filter(r=>computerCategories.includes(r.category)&&(!category||r.category===category));return{list,total:list.length,good:list.filter(r=>['B','MB'].includes(r.condition)).length,regular:list.filter(r=>r.condition==='R').length,bad:list.filter(r=>r.condition==='M').length};}
